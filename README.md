@@ -1,4 +1,9 @@
 # obj2jgr
+
+## Quick start
+type 'make run' to get the graphs
+
+## Intro
 Roughly converts obj files to jgraph outputs.
 
 The program takes a .obj 3D object file on standard input and outputs jgraph file data on standard output.
