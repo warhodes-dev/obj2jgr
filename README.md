@@ -24,7 +24,7 @@ With the mesh loaded in, it's as simple as iterating through that vector of tria
     0                       0                       (-Far*Near)/(Far-Near)  0  ]
 ```
 
-The gist of this is that we need to account for the fact that human vision is conal rather than orthoganal, so X and Y values are multiplied by this FOV factor (1/tan(theta/2)) which allows objects/triangles in the distance to span less of your field of vision that objects/triangles right in front of your view. The Z coordinate also needs to be multiplied by this Far/(Far-Near) factor in order to determine its distance from the camera origin (along z) so that the order of drawing can be determined later. Finally, the matrix is expanded to be 4x4 so we can extract z coordinate data later for culling.
+The gist of this is that we need to account for the fact that human vision is conal rather than orthoganal, so X and Y values are multiplied by this FOV factor (1/tan(theta/2)) which allows objects/triangles in the distance to span less of your field of vision than objects/triangles right in front of your view. The Z coordinate also needs to be multiplied by this Far/(Far-Near) factor in order to determine its distance from the camera origin (along z) so that the order of drawing can be determined later. Finally, the matrix is expanded to be 4x4 so we can extract z coordinate data later for culling.
 
 In addition to this main projection matrix, I used rotation matrices and a translation matrix to move/rotate the object around the viewport. Simply multiply triangles by these other matrices before the final projection.
 
