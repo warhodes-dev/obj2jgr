@@ -48,4 +48,4 @@ Finally, just output these translated/projected triangle's coordinates to standa
 `./obj2jgr 0 90 140 < fox.obj > fox.jgr`
 
 ## Credits
-Absolutely instrumental in this (ESPECIALLY the lighting/culling!) was the matrix projection/translation code from this series of youtube tutorials found here: https://www.youtube.com/watch?v=XgMWc6LumG4. This is an excellent series that goes into depth not just about how to program this stuff up but also *why* by going into the math.
+Absolutely instrumental in this (ESPECIALLY the lighting/culling!) was the matrix projection/translation code from this series of youtube tutorials found here: https://www.youtube.com/watch?v=XgMWc6LumG4. This is an excellent series that goes into depth about the math behind 3D projections.
