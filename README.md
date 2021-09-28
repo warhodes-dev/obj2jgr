@@ -47,5 +47,10 @@ Finally, just output these translated/projected triangle's coordinates to standa
 
 `./obj2jgr 0 90 140 < fox.obj > fox.jgr`
 
+## Further steps/ideas
+As of now the program is pretty limited in what it can display. To finish it up, I'd like to give it much more customizability on the user end. I'd like the user to be able to specify the position of the model in 3d space along with more rotation options, colors, etc.
+
+It would be completely possible right now to write a shell script or something that just outputs .jgr files for every degree of x rotation from 0 to 360. If you stitched these together into a .gif, you'd have a nice spinning animation
+
 ## Credits
 Absolutely instrumental in this (ESPECIALLY the lighting/culling!) was the matrix projection/translation code from this series of youtube tutorials found here: https://www.youtube.com/watch?v=XgMWc6LumG4. This is an excellent series that goes into depth about the math behind 3D projections.
